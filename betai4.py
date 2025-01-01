@@ -9,7 +9,7 @@ import joblib
 import time
 
 # Load data
-file_path = 'C:/Users/User/Desktop/nahom/Maths/multipliers3.csv'
+file_path = 'C:/Users/User/Desktop/nahom/Maths/multipliers.csv'
 df = pd.read_csv(file_path, header=None, names=['Multiplier'], dtype={'Multiplier': str}, low_memory=False)
 df['Multiplier'] = pd.to_numeric(df['Multiplier'], errors='coerce')
 df = df.dropna().reset_index(drop=True)
